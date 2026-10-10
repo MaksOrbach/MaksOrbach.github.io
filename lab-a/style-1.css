@@ -1,3 +1,106 @@
-body {
-  background-color: #dfecff;
+header
+{
+  background: linear-gradient(90deg, #d90303, #7d0000);
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+header p
+{
+  font-size: 64px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: Georgia, serif;
+  margin: 0;
+  grid-column: 2;
+}
+header nav
+{
+  grid-column: 2;
+}
+nav ul
+{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+nav a
+{
+  color: white;
+  text-decoration: none;
+}
+body
+{
+  background: linear-gradient(135deg, #ecd391, #a8792f);
+  color: #322e2e;
+  font-family: Georgia, serif;
+  margin: 0;
+}
+main
+{
+  margin: 30px;
+  padding: 20px 40px;
+}
+h1
+{
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+}
+h2
+{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  border: 4px solid #7f0000;
+  padding: 10px 20px;
+  width: fit-content;
+  margin: 40px auto 20px;
+}
+h3
+{
+  font-size: 24px;
+  font-weight: bold;
+}
+footer
+{
+  background-color: #2f2f2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+@media (max-width: 600px)
+{
+  header
+  {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+  header p, header nav
+  {
+    grid-column: 1;
+  }
+  header p
+  {
+    letter-spacing: 3px;
+    text-align: center;
+  }
+  nav ul
+  {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  main
+  {
+    margin: 10px;
+    padding: 10px;
+  }
 }
