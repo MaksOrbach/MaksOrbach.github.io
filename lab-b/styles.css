@@ -1,3 +1,62 @@
-body {
-  background-color: #f3fff3;
+body
+{
+  background-color: #211e1e;
+  color: #cecece;
+}
+.todo
+{
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+#tasks-list
+{
+  list-style: none;
+  padding: 0;
+}
+.task
+{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+}
+.task-text
+{
+  flex: 1;
+  text-align: left;
+}
+.delete
+{
+  background-color: red;
+  color: #211e1e;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+h1
+{
+  font-size: 56px;
+  font-weight: bold;
+}
+#search
+{
+  width: 100%;
+  box-sizing: border-box;
+}
+#add-form
+{
+  display: flex;
+  gap: 8px;
+}
+#new-text
+{
+  flex: 1;
+}
+#add-form button
+{
+  background-color: #2d8d81;
+  color: #211e1e;
+  border-radius: 4px;
+  cursor: pointer;
 }

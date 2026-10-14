@@ -1,14 +1,56 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Imie Nazwisko (00000) - IS LAB B</title>
-
-    <link rel="stylesheet" href="styles.css" type="text/css">
-    <script src="scripts.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maksymilian Orbach 55776 - LAB B</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
+    <main class="todo">
+        <h1>TO DO LIST</h1>
 
+        <input type="search" id="search" placeholder="search...">
+
+        <ul id="tasks-list">
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">task1</span>
+                <span class="task-date">2026-10-13</span>
+                <button class="delete" title="Delete">X</button>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">task2</span>
+                <span class="task-date">2026-10-14</span>
+                <button class="delete" title="Delete">X</button>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">task3</span>
+                <span class="task-date"></span>
+                <button class="delete" title="Delete">X</button>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">task4</span>
+                <span class="task-date">2026-11-11</span>
+                <button class="delete" title="Delete">X</button>
+            </li>
+            <li class="task">
+                <input type="checkbox">
+                <span class="task-text">task5</span>
+                <span class="task-date"></span>
+                <button class="delete" title="Delete">X</button>
+            </li>
+        </ul>
+
+        <form id="add-form">
+            <input type="text" id="new-text" placeholder="add task...">
+            <input type="datetime-local" id="new-date">
+            <button type="submit">Save</button>
+        </form>
+    </main>
 </body>
 </html>
