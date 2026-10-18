@@ -60,3 +60,12 @@ h1
   border-radius: 4px;
   cursor: pointer;
 }
+mark
+{
+  background-color: yellow;
+  color: #211e1e;
+}
+.edit-text
+{
+  flex: 1;
+}
