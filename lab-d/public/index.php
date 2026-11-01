@@ -38,6 +38,35 @@ switch ($action) {
         $controller = new \App\Controller\PostController();
         $view = $controller->deleteAction($_REQUEST['id'], $router);
         break;
+    case 'character-index':
+        $controller = new \App\Controller\CharacterController();
+        $view = $controller->indexAction($templating, $router);
+        break;
+    case 'character-create':
+        $controller = new \App\Controller\CharacterController();
+        $view = $controller->createAction($_REQUEST['character'] ?? null, $templating, $router);
+        break;
+    case 'character-edit':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\CharacterController();
+        $view = $controller->editAction($_REQUEST['id'], $_REQUEST['character'] ?? null, $templating, $router);
+        break;
+    case 'character-show':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\CharacterController();
+        $view = $controller->showAction($_REQUEST['id'], $templating, $router);
+        break;
+    case 'character-delete':
+        if (! $_REQUEST['id']) {
+            break;
+        }
+        $controller = new \App\Controller\CharacterController();
+        $view = $controller->deleteAction($_REQUEST['id'], $router);
+        break;
     case 'info':
         $controller = new \App\Controller\InfoController();
         $view = $controller->infoAction();
